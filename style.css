@@ -38,7 +38,7 @@ body {
     margin-left: 150px;
     margin-right: 150px;
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    height: 1700px;
+    height: 900px;
     background-color: white;
     color:
 }
@@ -108,7 +108,7 @@ content {
     border-left: solid #CCCCCC thin;
     background: #ffcef3;
     width: 1%;
-    height: 2900px;
+    height: 900px;
 }
 
 #rightEdge {
@@ -116,7 +116,7 @@ content {
     border-left: solid #CCCCCC thin;
     background: #ffcef3;
     width: 1%;
-    height: 2900px;
+    height: 900px;
 }
 
 #footer {
