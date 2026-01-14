@@ -2,47 +2,44 @@ body {
     background-color: lavender;
 }
 
+/* ---------- PAGE CONTENT LISTS ---------- */
+
 #pageContent ul {
     list-style: disc;
     padding-left: 1.25rem;
     max-width: 800px;
 }
 
-
 #pageContent li {
     display: flow-root;
     margin-bottom: 12px;
     line-height: 1.5;
-   
+    padding-bottom: 10px;
 }
 
 #pageContent ul img {
-
     float: right;
     width: 150px;
-    
     height: auto;
     margin: 0 0 8px 12px;
-   
     border-radius: 8px;
     object-fit: cover;
-     border: 2px dashed coral;
-    
-    border-collapse: collapse;
-   
-
+    border: 2px dashed coral;
 }
 
+/* ---------- MAIN WRAPPER ---------- */
+/* HEIGHT ADJUSTED + FLOAT CONTAINMENT FIX */
 
 #wrapper {
     margin-left: 150px;
     margin-right: 150px;
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    height: 675px;
+    height: 820px;              /* adjusted */
     background-color: white;
-    color:
-    overflow: hidden;
+    overflow: hidden;           /* REQUIRED to contain floats */
 }
+
+/* ---------- HEADER ---------- */
 
 #header {
     width: 99.8%;
@@ -54,8 +51,9 @@ body {
     padding-top: 20px;
     align-content: center;
     text-align: center;
-    
 }
+
+/* ---------- BUTTONS ---------- */
 
 a.button {
     padding: 6px;
@@ -66,6 +64,8 @@ a.button {
     text-decoration: none;
     margin: 20px;
 }
+
+/* ---------- CONTENT ---------- */
 
 content {
     float: left;
@@ -78,10 +78,21 @@ content {
     line-height: 1.6;
     width: 95%;
     height: 400px;
+    padding-left: 15px;
 }
 
+#pageContent img {
+    width: 70%;
+}
+
+#pageContent p {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+/* ---------- HEADINGS ---------- */
+
 #content h2 {
-    color: #28A684;
     color: #6b89bf;
     padding-left: 5px;
 }
@@ -91,25 +102,15 @@ content {
     margin-left: 0px;
 }
 
-#pageContent {
-    padding-left: 15px
-}
-
-#pageContent img {
-
-    width: 70%;
-}
-
-#pageContent li {
-    padding-bottom: 10px;
-}
+/* ---------- SIDE EDGES ---------- */
+/* MUST MATCH WRAPPER HEIGHT */
 
 #leftEdge {
     float: left;
     border-left: solid #CCCCCC thin;
     background: #ffcef3;
     width: 1%;
-    height: 675px;
+    height: 820px;
 }
 
 #rightEdge {
@@ -117,8 +118,10 @@ content {
     border-left: solid #CCCCCC thin;
     background: #ffcef3;
     width: 1%;
-    height: 675px;
+    height: 820px;
 }
+
+/* ---------- FOOTER ---------- */
 
 #footer {
     width: 99.8%;
@@ -128,20 +131,18 @@ content {
     font-style: italic;
     background: #FFFFD3;
     border: solid #CCCCCC thin;
-    border-top: none
+    border-top: none;
 }
 
 #footer p {
     padding-left: 10px;
 }
 
-#pageContent p {
-    padding-left: 20px;
-    line-height: 1.6;
-}
+/* ---------- MENU ---------- */
 
 #menu img {
     margin-left: 18px;
     width: 90%;
     margin-top: 20px;
 }
+
